@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS-Day 2</title>
+    <!-- 3.external style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 2.internal styles -->
+    <style>
+        #internal-style {
+            padding: 10px;
+            margin: 10px;
+            background-color: #DDFFDD;
+            font-family: monospace;
+            font-size: 28px;
+        }
+
+        .content-block {
+            display: block;
+            color: red;
+            background-color: #eee;
+            font-size: 25px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #content-inline {
+            display: inline;
+            color: white;
+            background-color: #000;
+            font-size: 28px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>What is CSS</h2>
+        <p>
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+    </div>
+    <h2>Ways to use CSS</h2>
+    <p>CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a style element in the head section
+External - by using a link element to link to an external CSS file
+The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.</p>
+    <!-- 1.inline style -->
+    <div style="color: white; background: #000; margin: 5px; font-size: 24px; font-family: sans-serif;">
+        this refers to inline style
+    </div>
+
+    <div id="internal-style">
+        this refers to internal style sheet
+    </div>
+
+    <div class="external-style">
+        this refers to external style sheet
+    </div>
+    <hr>
+
+<p>Using The class Attribute
+The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.</p>
+<p>Using The id Attribute
+The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.
+
+The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}.</p>
+
+    <h1>Display Property</h1>
+    <div class="content-block">
+        display block property
+    </div>
+    <div id="content-inline">
+        display inline property
+    </div>
+</body>
+
+</html>
